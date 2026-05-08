@@ -31,11 +31,24 @@ Centered on analyzing IPv4 packet headers and fragmentation using Wireshark capt
 ### Assignment 3: Routing Algorithms and Socket Programming
 Covers the implementation of Dijkstra's and Bellman-Ford algorithms along with UDP Socket Programming.
 * `CS425_ass3.pdf`: Problem statement including the network graph for shortest-path calculation
-* `CS425_ass3_sol.pdf`: Theoretical analysis and algorithm walkthroughs
+* `CS425_ass3_code.cpp`: C++ implementation of Dijkstra's and Bellman-Ford shortest path algorithms
 * `UDPClient.py`: Python script for the UDP client.
 * `UDPServer.py`: Python script for the UDP server.
 
-#### How to Run (UDP Socket Application)
+#### How to Run
+
+**Shortest Path Algorithms (C++ Code):**
+1.  Compile the routing program:
+    ```bash
+    g++ code.cpp -o routing
+    ```
+2.  Run the executable:
+    ```bash
+    ./routing
+    ```
+3.  Input the source and destination nodes as prompted to view the route and cost.
+
+**UDP Socket Application (Python):**
 1.  Open two separate terminal windows.
 2.  **Start the Server first**:
     ```bash
@@ -45,4 +58,4 @@ Covers the implementation of Dijkstra's and Bellman-Ford algorithms along with U
     ```bash
     python UDPClient.py
     ```
-4.  Enter the message in the client terminal to see the communication with the server.
+4.  Exchange messages between the client and server terminals.
